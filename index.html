@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iCompi - Todo en orden</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    :root { --fondo: #f4ffe3; --texto: #0b3d2c; --secundario: #3d5f50; --acento: #0b7a55; --linea: #cfe3c0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fondo: #04170f; --texto: #e8f5ec; --secundario: #a9c4b5; --acento: #6fdcae; --linea: #1d3a2d; }
+    }
+    body { margin: 0; background: var(--fondo); color: var(--texto); font-family: system-ui, sans-serif; line-height: 1.6; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px; text-align: center; }
+    .logo { width: 112px; height: 112px; border-radius: 24px; }
+    h1 { font-size: 2rem; margin-bottom: 4px; }
+    .lema { color: var(--secundario); margin-top: 0; }
+    ul { list-style: none; padding: 0; margin: 24px 0; }
+    li { margin-bottom: 8px; }
+    nav { border-top: 1px solid var(--linea); padding-top: 16px; margin-top: 32px; }
+    nav a { color: var(--acento); margin: 0 12px; }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="icono.svg" alt="Logo de iCompi">
+    <h1>iCompi</h1>
+    <p class="lema">Todo en orden</p>
+
+    <p>
+      La app para organizar la convivencia entre quienes comparten piso, un viaje o cualquier grupo.
+      Todo en un solo sitio:
+    </p>
+    <ul>
+      <li>Lista de la compra</li>
+      <li>Tareas</li>
+      <li>Gastos</li>
+      <li>Tablón de avisos</li>
+    </ul>
+
+    <nav>
+      <a href="privacidad.html">Política de privacidad</a>
+      <a href="borrar-cuenta.html">Borrar mi cuenta</a>
+    </nav>
+  </main>
+</body>
+</html>
