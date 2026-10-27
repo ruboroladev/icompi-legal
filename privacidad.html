@@ -24,7 +24,7 @@
   <main>
     <img class="logo" src="icono.png" alt="Logo de iCompi">
     <h1>Política de privacidad de iCompi</h1>
-    <p class="fecha">Última actualización: 23 de octubre de 2026</p>
+    <p class="fecha">Última actualización: 27 de octubre de 2026</p>
 
     <p>
       iCompi es una aplicación móvil para organizar la convivencia entre personas que comparten piso o cualquier otro grupo:
@@ -47,6 +47,8 @@
       <li>Tu foto de perfil, que es obligatoria. La reducimos a un tamaño pequeño (128 × 128 píxeles) antes de guardarla.</li>
       <li>Si entras con Google, recibimos de Google únicamente tu correo (verificado) y tu nombre. No guardamos tu foto de
         Google ni ningún otro dato de tu cuenta de Google.</li>
+      <li>Un identificador de tu móvil para las notificaciones (un «token» que genera el servicio de notificaciones y que no
+        contiene tu nombre ni tu correo). Se guarda cuando aceptas recibir avisos y se borra al cerrar sesión.</li>
     </ul>
     <p><strong>Datos que tú creas dentro de un grupo:</strong></p>
     <ul>
@@ -70,7 +72,9 @@
     <h2>3. Para qué usamos tus datos</h2>
     <p>
       Solo para que la aplicación funcione: crear tu cuenta, identificarte, mostrarte los grupos a los que perteneces y que
-      los demás miembros vean lo que compartes con ellos. No vendemos tus datos ni los usamos para publicidad ni para
+      los demás miembros vean lo que compartes con ellos. También para enviarte notificaciones sobre tu grupo (por ejemplo,
+      que alguien ha registrado un pago, ha colgado una nota en el tablón o te ha asignado una tarea). Puedes desactivarlas
+      cuando quieras en los ajustes de tu móvil. No vendemos tus datos ni los usamos para publicidad ni para
       crear perfiles.
     </p>
 
@@ -84,7 +88,11 @@
     <h2>5. Proveedores que intervienen</h2>
     <ul>
       <li><strong>Render</strong> aloja el servidor y la base de datos de la aplicación, en un centro de datos de Frankfurt (Alemania).</li>
-      <li><strong>Google</strong> interviene solo si eliges entrar con tu cuenta de Google.</li>
+      <li><strong>Google</strong> interviene si eliges entrar con tu cuenta de Google y, además, en la entrega de las
+        notificaciones (Firebase Cloud Messaging).</li>
+      <li><strong>Expo</strong> recibe los avisos de nuestro servidor y los pasa a Google para que lleguen a tu móvil. Cada
+        aviso lleva el nombre del grupo y un texto corto con el nombre de quien hizo la acción (por ejemplo, «Ana te ha
+        asignado una tarea»).</li>
     </ul>
     <p>No compartimos tus datos con ningún otro tercero.</p>
 
@@ -99,7 +107,7 @@
     </p>
     <ul>
       <li>Sales de todos tus grupos.</li>
-      <li>Se borran tu foto de perfil, tus tareas asignadas, tu correo y tu acceso.</li>
+      <li>Se borran tu foto de perfil, tus tareas asignadas, tu correo, tu acceso y los móviles registrados para recibir notificaciones.</li>
       <li>Tu cuenta queda anonimizada como «Usuario eliminado», para que los gastos de los demás miembros sigan cuadrando
         sin mostrar ningún dato tuyo.</li>
     </ul>
